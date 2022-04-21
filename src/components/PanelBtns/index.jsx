@@ -22,7 +22,7 @@ const PanelBtns = () => {
       <div className='panel-btns-container'>
         {data.map((item) => (
           <div key={item.id} className='panel-btn'>
-            <Link to='/'>
+            <Link to={item.url}>
               <div
                 className={`panel-btn__img-container detail detail--bgColor${item.swatchColorNo}`}
               >

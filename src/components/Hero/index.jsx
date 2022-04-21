@@ -1,8 +1,8 @@
 import React from "react"
 
-const Hero = ({bgImg, h1Text, h1El, pText}) => {
+const Hero = ({bgImg, h1Text, h1El, pText, classes}) => {
   return (
-    <div className='hero hero-image' style={bgImg ? {backgroundImage: `url(${bgImg})`} : null}>
+    <div className={`hero hero-image ${classes}`} style={bgImg ? {backgroundImage: `url(${bgImg})`} : null}>
       <div className='hero__text'>
         {h1Text ? <h1>{h1Text}</h1> : null}
         {h1El ? h1El : null}

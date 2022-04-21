@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 // Components
 import Hero from "../../components/Hero"
 import Loading from "../../components/Loading"
-import HeroBg from "../../assets/images/shutterstock_1654319035.jpg"
+import HeroBg from "../../assets/images/hero/shutterstock_1654319035.jpg"
 import SectionTitle from "../../components/SectionTitle"
 import PanelBtns from "../../components/PanelBtns"
 // Hook

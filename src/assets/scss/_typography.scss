@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-weight: normal;
+  font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: var(--color-text);
@@ -28,12 +28,13 @@ h5 {
 }
 
 h1 {
+  font-family: var(--font-heading-semibold);
   font-size: 3.8rem;
   line-height: 5.0rem;
-  font-weight: 700;
-  
+  font-weight: 600;
 
   strong {
+    font-family: var(--font-heading);
     font-size: 6.6rem;
     line-height: 5.0rem;
     font-weight:700;

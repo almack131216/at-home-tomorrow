@@ -41,4 +41,14 @@
             font-size:2.1rem;
         }
     }
+
+    &.hero--category {
+        h1 {
+            font-size:2.3rem;
+
+            strong {
+                font-size:5.8rem;
+            }
+        }
+    }
 }
