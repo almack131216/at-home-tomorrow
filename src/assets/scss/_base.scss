@@ -2,18 +2,23 @@
 
 :root {
     /* colors */
-    --color-bg-body: #f1f1f1;
-    --color-navbar: #000520;
-    --color-navbar-text: #fff;
-    --color-primary: #84c389;
+    --color-bg-body: #fff;
+    --color-navbar: #fff;
+    --color-navbar-text: #BA8748;
+    --color-primary: #BA8748;
     --color-secondary: #a96fb8;
+    --color-swatch-1: #C79C84;
+    --color-swatch-2: #DCA564;
+    --color-swatch-3: #83ABAD;
+    --color-swatch-4: #B86D73;
+    --color-swatch-5: #3D5248;
     --color-heading: #000;
     --color-text: #444;
     --color-border: #ccc;
 
     /* fonts  */
-    --font-header: "Roboto", sans-serif;
-    --font-body: "Poppins", sans-serif;
+    --font-header: "Montserrat Bold", sans-serif;
+    --font-body: "Montserrat Regular", sans-serif;
     --text-small: 0.7em;
     --letter-spacing: 1px;
 
@@ -30,14 +35,19 @@
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-html {}
+html {
+    margin:0;
+    padding:0;
+}
 
 body {
     background-color: var(--color-bg-body);
+    margin:0;
+    padding:0;
 }
 
 .page-container {
-    padding: var(--pad1);
+    // padding: 0;
 }
 
 .color-primary {

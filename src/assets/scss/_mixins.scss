@@ -1,24 +1,16 @@
 // ------ mixins ------
 
-@mixin shared-container() {
-    width: 100%;
-    margin: 2rem auto;
-    background: var(--clr-white);
-    border-radius: var(--radius);
-    padding: 2.5rem 2rem;
-    max-width: var(--fixed-width);
-    gap: 1rem 2rem;
-}
+@mixin text-shadow($type: p) {
+    $offset-x:0;
+    $offset-y:2px;
+    $blur: 2px;
+    $color: rgba(0,0,0,0.28);
 
-@mixin shared-block() {
-    padding: 1rem 1.5rem;
-    border: 2px solid var(--color-border);
-    margin-bottom: 1rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--light-shadow);
-    background-color: white;
-
-    &:hover {
-        box-shadow: var(--dark-shadow);
+    @if($type == h1){
+        $blur: 4px;
+        $color: rgba(0,0,0,0.21);
     }
+
+    // offset-x | offset-y | blur-radius | color
+    text-shadow: $offset-x $offset-y $blur $color
 }

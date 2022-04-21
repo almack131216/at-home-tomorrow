@@ -1,0 +1,44 @@
+// Hero
+
+/* The hero image */
+.hero {
+    &.hero-image {
+        background-color:#ccc;
+        /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+        // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* Set a specific height */
+    height: 455px;
+
+
+    /* Place text in the middle of the image */
+    .hero__text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        width:60%;
+
+        h1 {
+            @include text-shadow(h1);
+            text-transform:uppercase;
+
+            strong {
+                display:block;
+            }
+        }
+
+        p {
+            @include text-shadow(p);
+            font-size:2.1rem;
+        }
+    }
+}
