@@ -1,0 +1,16 @@
+/* index.scss */
+@import "./assets/css/normalize.css";
+
+/* BASE / ROOT */
+@import "./assets/scss/base";
+@import "./assets/scss/typography";
+@import "./assets/scss/mixins";
+
+/* COMPONENTS */
+@import "./components/Navbar/";
+@import "./components/Loading/";
+
+/* PAGES */
+@import "./pages/Home";
+@import "./pages/About";
+@import "./pages/Styles";
