@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import Hero from "../../components/Hero"
 import Loading from "../../components/Loading"
 import HeroBg from "../../assets/images/shutterstock_1654319035.jpg"
-
+import PanelBtns from "../../components/PanelBtns"
 // Hook
 
 const HomePage = () => {
@@ -18,6 +18,7 @@ const HomePage = () => {
     <>
       <div className='page-container'>
         <Hero bgImg={HeroBg} h1El={h1El} pText={"Find out how today’s emerging interior trends are set to shape the luxury homes of tomorrow."} />
+        <PanelBtns />
         {loading && <Loading />}       
       </div>
     </>

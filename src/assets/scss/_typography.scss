@@ -82,7 +82,7 @@ a {
 
 ul {
   list-style: none;
-  margin: 0 0 var(--pad1) 0;
+  margin: 0 0 var(--p1) 0;
   padding: 0;
 
   > li {
@@ -90,11 +90,11 @@ ul {
 
     &::before {
       content: "•";
-      padding: 0 var(--pad1);
+      padding: 0 var(--p1);
     }
 
     > ol {
-      margin:var(--pad1);
+      margin:var(--p1);
 
       > li {
         padding:0;
