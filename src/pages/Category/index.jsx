@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import Hero from "../../components/Hero"
 import Loading from "../../components/Loading"
 import HeroBg from "../../assets/images/hero/living-room.jpg"
+import SectionNav from "../../components/SectionNav"
 
 const CategoryPage = () => {
   const [loading, setLoading] = useState(false);
@@ -16,6 +17,7 @@ const CategoryPage = () => {
     <>
       <div className='page-container'>
         <Hero bgImg={HeroBg} h1El={h1El} classes="hero--category" />
+        <SectionNav />
         {loading && <Loading />}       
       </div>
     </>

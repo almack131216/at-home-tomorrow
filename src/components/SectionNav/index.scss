@@ -1,0 +1,78 @@
+// ----- SectionNav
+
+.nav-container {
+
+    nav {
+        background-color: --color-navbar;
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                flex: 3;
+
+                &::before {
+                    content: '';
+                    display: none;
+                }
+
+                &.icon-container {
+                    flex: 1;
+                }
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    transition: 0.5s;
+                    background-color: var(--color-navbar);
+                    color: var(--color-navbar-text);
+                    line-height:2.4rem;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    padding: var(--p3) 5px;
+
+                    &:hover {
+                        // background-color: #aa32ff;
+                        // color: #fff;
+                        text-decoration:underline;                        
+                    }
+                }
+
+                /*----- /a -----*/
+            }
+        }
+    }
+
+    /*----- /nav -----*/
+}
+
+@media all and (max-width: 1000px) {
+    .nav-container nav ul {
+        flex-wrap: wrap;
+
+        li {
+            flex: 1 1 50%;
+
+            a {
+                padding: var(--p1) 5px;
+            }
+
+            &.icon-container {
+                flex: 1 1 25%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .nav-container nav ul {
+        li {
+            flex-basis: 100%;
+        }
+    }
+}
