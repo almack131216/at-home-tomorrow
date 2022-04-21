@@ -1,4 +1,4 @@
-import React from "react"
+import { Link } from "react-router-dom"
 
 const SectionNav = () => {
   return (
@@ -7,22 +7,22 @@ const SectionNav = () => {
         <nav>
           <ul>
             <li>
-              <a href='#'>The trends</a>
+              <Link to='/'>The trends</Link>
             </li>
             <li>
-              <a href='#'>How we searched </a>
+              <Link to='/'>How we searched </Link>
             </li>
             <li>
-              <a href='#'>Anticipated searches</a>
+              <Link to='/'>Anticipated searches</Link>
             </li>
             <li>
-              <a href='#'>How many searches?</a>
+              <Link to='/'>How many searches?</Link>
             </li>
             <li>
-              <a href='#'>Search peaks and dips</a>
+              <Link to='/'>Search peaks and dips</Link>
             </li>
             <li>
-              <a href='#'>Our Methodology</a>
+              <Link to='/'>Our Methodology</Link>
             </li>
           </ul>
         </nav>

@@ -180,10 +180,10 @@ $flex-column-gap: 20px;
 
 @media #{$bp-lt-sm} {
     .panel-btns-container {
-        column-gap: calc($flex-column-gap / 2);
+        column-gap: calc(#{$flex-column-gap} / 2);
 
         >.panel-btn {
-            margin:calc(#{--p1 / 2});
+            margin:calc(#{$flex-column-gap} / 4);
             width: 20%;
 
             >a {

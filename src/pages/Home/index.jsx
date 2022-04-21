@@ -8,11 +8,12 @@ import PanelBtns from "../../components/PanelBtns"
 // Hook
 
 const HomePage = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const h1El = <h1>At Home <strong>Tomorrow</strong></h1>
 
   useEffect(() => {
     document.title = "Home"
+    setLoading(false)
   }, [])
 
   return (
