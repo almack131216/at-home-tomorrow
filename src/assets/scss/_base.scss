@@ -27,6 +27,7 @@ $bp-lt-xxs: "screen and (max-width: 399px)"; // up to 399px
 
     /* fonts  */
     --font-header: "Montserrat Bold", sans-serif;
+    --font-header-semibold: "Montserrat SemiBold", sans-serif;
     --font-body: "Montserrat Regular", sans-serif;
     --text-small: 0.7em;
     --letter-spacing: 1px;
@@ -34,7 +35,8 @@ $bp-lt-xxs: "screen and (max-width: 399px)"; // up to 399px
     /* rest of the vars */
     --transition: 0.3s ease-in-out all;
     --p1: 10px;
-    --p2: calc(var(--p1) * 2);
+    --p2: 20px;
+    --p3: 30px;
     --max-width: 1120px;
     --border-radius: 5px;
     --transition: all 0.3s linear;

@@ -1,0 +1,11 @@
+.section {
+    &.section--title {
+        padding: var(--p3);
+        text-align: center;
+
+        h3 {
+            text-transform: uppercase;
+            color:var(--color-primary);
+        }
+    }
+}

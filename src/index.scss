@@ -2,9 +2,6 @@
 /* NORMALIZE / RESET base */
 @import "./assets/css/normalize.css";
 
-/* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 /* BASE / ROOT */
 @import "./assets/scss/base";
 @import "./assets/scss/typography";
@@ -14,6 +11,7 @@
 @import "./components/Navbar/";
 @import "./components/Loading/";
 @import "./components/Hero/";
+@import "./components/SectionTitle/";
 @import "./components/PanelBtns/";
 
 /* PAGES */
