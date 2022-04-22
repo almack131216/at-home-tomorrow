@@ -11,7 +11,7 @@ const Styles = () => {
       <h2>Heading 2</h2>
       <h3>Heading 3</h3>
       <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
+      <hr />
       <strong>strong</strong>
       <p>
         Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -38,6 +38,7 @@ const Styles = () => {
           <li>Unordered list item 4</li>
           <li>Unordered list item 5</li>
       </ul>
+      <hr />
       <strong>Color Vars</strong>
       <div className='color-swatches'>
         <div className='swatch'>
@@ -51,6 +52,21 @@ const Styles = () => {
         </div>
         <div className='swatch'>
           <div className='bg-color-secondary'></div>--color-secondary
+        </div>
+        <div className='swatch'>
+          <div className='bg-color-swatch-1'></div>--color-swatch-1
+        </div>
+        <div className='swatch'>
+          <div className='bg-color-swatch-2'></div>--color-swatch-2
+        </div>
+        <div className='swatch'>
+          <div className='bg-color-swatch-3'></div>--color-swatch-3
+        </div>
+        <div className='swatch'>
+          <div className='bg-color-swatch-4'></div>--color-swatch-4
+        </div>
+        <div className='swatch'>
+          <div className='bg-color-swatch-5'></div>--color-swatch-5
         </div>
       </div>
     </div>

@@ -1,53 +1,82 @@
-// Hero
+// ----- Hero -----
 
-/* The hero image */
+$hero-height: 455px;
+$hero-height-sm: 250px;
+
 .hero {
+    height: $hero-height;
+
     &.hero-image {
-        background-color:#ccc;
+        background-color: color(--color-bg-body);
         /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
         // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         /* Position and center the image to scale nicely on all screens */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
-    /* Set a specific height */
-    height: 455px;
-
 
     /* Place text in the middle of the image */
     .hero__text {
         text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         color: white;
-        width:60%;
+        width: 65%;
 
         h1 {
             @include text-shadow(h1);
-            text-transform:uppercase;
+            text-transform: uppercase;
+            margin: 0 auto;
 
             strong {
-                display:block;
+                display: block;
             }
         }
 
         p {
             @include text-shadow(p);
-            font-size:2.1rem;
+            font-size: 2.1rem;
+            margin-top: var(--p2);
+            margin-bottom: 0;
         }
     }
 
+    // /.hero__text
+
     &.hero--category {
         h1 {
-            font-size:2.3rem;
+            font-size: 2.3rem;
 
             strong {
-                font-size:5.8rem;
+                font-size: 5.8rem;
+            }
+        }
+    }
+
+    // /&.hero--category
+}
+
+// /.hero
+
+@media #{$bp-lt-sm} {
+    .hero {
+        height: $hero-height-sm;
+
+        .hero__text {
+            h1 {
+                font-size: 1.6rem;
+                line-height: 2rem;
+
+                strong {
+                    font-size: 4rem;
+                }
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 2rem;
             }
         }
     }

@@ -1,13 +1,22 @@
-import React from "react"
+/*
+PARAMS:
+bgImg: background-image url
+titleText: string
+titleEl: html elements (Example: <h1>This is a <strong>demo!</strong></h1>)
+pText: string
+classes: css class names as string
+*/
 
-const Hero = ({bgImg, h1Text, h1El, pText, classes}) => {
+const Hero = ({ bgImg, titleText, titleEl, pText, classes }) => {
   return (
-    <div className={`hero hero-image ${classes}`} style={bgImg ? {backgroundImage: `url(${bgImg})`} : null}>
+    <div
+      className={`hero hero-image ${classes}`}
+      style={bgImg ? { backgroundImage: `url(${bgImg})` } : null}
+    >
       <div className='hero__text'>
-        {h1Text ? <h1>{h1Text}</h1> : null}
-        {h1El ? h1El : null}
+        {titleText ? <h1>{titleText}</h1> : null}
+        {titleEl ? titleEl : null}
         {pText ? <p>{pText}</p> : null}
-        {/* <button>Call to action</button> */}
       </div>
     </div>
   )

@@ -2,6 +2,8 @@
 
 // VARS
 // Breakpoints
+$bp-gt-md: "screen and (min-width: 992px)"; // from 768px
+$bp-lt-md: "screen and (max-width: 991px)"; // up to 767px
 $bp-gt-sm: "screen and (min-width: 768px)"; // from 768px
 $bp-lt-sm: "screen and (max-width: 767px)"; // up to 767px
 $bp-gt-mobile: "screen and (min-width: 640px)"; // from 640px
@@ -29,41 +31,45 @@ $bp-lt-xxs: "screen and (max-width: 399px)"; // up to 399px
     --font-header: "Montserrat Bold", sans-serif;
     --font-header-semibold: "Montserrat SemiBold", sans-serif;
     --font-body: "Montserrat Regular", sans-serif;
-    --text-small: 0.7em;
-    --letter-spacing: 1px;
+    --text-small: 0.7rem;
+    --letter-spacing: 0.1rem;
 
     /* rest of the vars */
-    --transition: 0.3s ease-in-out all;
+    --transition-speed: 0.5s;
+    --transition: var(--transition-speed) ease-in-out all;
     --p1: 10px;
     --p2: 20px;
     --p3: 30px;
     --max-width: 1120px;
     --border-radius: 5px;
-    --transition: all 0.3s linear;
     --spacing: 0.1rem;
     --radius: 0.25rem;
     --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --opacity-semi: 0.6;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-  }
+}
 
 html {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: var(--color-bg-body);
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-// .page-container {
-//     // padding: 0;
-// }
+.page-container {
+    margin: 0;
+    padding: 0;
+}
 
 .color-primary {
     color: var(--color-primary)
@@ -87,4 +93,24 @@ body {
 
 .bg-color-secondary {
     background-color: var(--color-secondary)
+}
+
+.bg-color-swatch-1 {
+    background-color: var(--color-swatch-1)
+}
+
+.bg-color-swatch-2 {
+    background-color: var(--color-swatch-2)
+}
+
+.bg-color-swatch-3 {
+    background-color: var(--color-swatch-3)
+}
+
+.bg-color-swatch-4 {
+    background-color: var(--color-swatch-4)
+}
+
+.bg-color-swatch-5 {
+    background-color: var(--color-swatch-5)
 }
