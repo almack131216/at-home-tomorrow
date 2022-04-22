@@ -9,7 +9,7 @@ const AboutPage = () => {
     <div className='page-container'>
       <h1>About</h1>
       <hr />
-      <h5>API</h5>
+      <h3>API</h3>
       <ul>
         <li>
           Will accept a search term (not available in current API) for future
@@ -37,7 +37,7 @@ const AboutPage = () => {
         </li>
       </ul>
       <hr />
-      <h5>Accordion</h5>
+      <h3>Accordion</h3>
       <ul>
         <li>
           Accepts [shift/alt+shift/space/return] to navigate and toggle each
@@ -53,13 +53,13 @@ const AboutPage = () => {
         </li>
       </ul>
       <hr />
-      <h5>Grid</h5>
+      <h3>Grid</h3>
       <ul>
         <li>Using [grid-template-columns]</li>
         <li>[Load More] button will add another # items</li>
       </ul>
       <hr />
-      <h5>Style</h5>
+      <h3>Style</h3>
       <ul>
         <li>Using node-sass to compile individual .scss files</li>
         <li>Files are in the same folder as associated .jsx file</li>

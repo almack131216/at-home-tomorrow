@@ -31,7 +31,7 @@ const PanelBtns = () => {
                 </div>
               </div>
               <div className='panel-btn__txt-container'>
-                <span>{item.name}</span>
+                <h4>{item.name}</h4>
               </div>
             </Link>
           </div>

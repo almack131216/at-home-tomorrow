@@ -1,4 +1,4 @@
-// ----- SectionNav
+// ----- SectionNav -----
 
 .nav-container {
 
@@ -19,16 +19,12 @@
                     display: none;
                 }
 
-                &.icon-container {
-                    flex: 1;
-                }
-
                 a {
                     display: block;
                     width: 100%;
-                    height:100%;
+                    height: 100%;
                     text-align: center;
-                    transition: 0.5s;
+                    transition: var(--transition-speed);
                     background-color: var(--color-navbar);
                     color: var(--color-navbar-text);
                     line-height: 2.4rem;
@@ -36,9 +32,9 @@
                     text-transform: uppercase;
                     text-decoration: none;
                     padding: var(--p3) 5px;
-
                     position: relative;
 
+                    // Underline hover
                     &::after {
                         content: '';
                         position: absolute;
@@ -47,31 +43,33 @@
                         width: 100%;
                         height: 3px;
                         background-color: var(--color-primary);
-                        opacity: 0;
-                        transition: opacity 300ms, transform 300ms;
+                        transition: opacity var(--transition-speed), transform var(--transition-speed);
                         opacity: 1;
-                        transform: scale(0);
+                        transform: scaleX(0);
                         transform-origin: center;
                     }
 
-                    &:hover {
-                        &:after,
-                        &:focus {
+                    &:hover,
+                    &:focus {
+                        &:after {
                             opacity: 1;
                             transform: translate3d(0, 0.2em, 0);
-                            transform: scale(1);
+                            transform: scaleX(30%);
                         }
                     }
+
+                    // /Underline hover
                 }
 
-                /*----- /a -----*/
+                // /a
             }
         }
     }
 
-    /*----- /nav -----*/
+    // /nav 
 }
 
+// // BP custom
 @media all and (max-width: 1000px) {
     .nav-container nav ul {
         flex-wrap: wrap;
@@ -80,24 +78,25 @@
             flex: 1 1 50%;
 
             a {
-                padding: var(--p1) 5px;
+                padding: var(--p1);
 
                 &::after {
                     bottom: 0;
                 }
             }
-
-            &.icon-container {
-                flex: 1 1 25%;
-            }
         }
     }
 }
 
-@media all and (max-width: 500px) {
+// /BP custom
+
+// // BP mobile
+@media #{$bp-lt-mobile} {
     .nav-container nav ul {
         li {
             flex-basis: 100%;
         }
     }
 }
+
+// / BP mobile
