@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const SectionNav = () => {
   return (
     <>
-      <div class='nav-container'>
+      <div className='nav-container'>
         <nav>
           <ul>
             <li>

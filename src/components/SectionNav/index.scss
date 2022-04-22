@@ -81,6 +81,10 @@
 
             a {
                 padding: var(--p1) 5px;
+
+                &::after {
+                    bottom: 0;
+                }
             }
 
             &.icon-container {
