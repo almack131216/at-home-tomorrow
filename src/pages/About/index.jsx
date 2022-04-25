@@ -33,6 +33,13 @@ const AboutPage = () => {
           </ul>
         </li>
       </ul>
+      <hr />
+      <h3>With more time...</h3>
+      <ul>
+        <li>Make fully responsive down to 320px wide - I have added basic responsive control, but not full</li>
+        <li>Test on multiple browsers with postcss</li>
+        <li>Add compliance code for readability (aria, alts, titles etc)</li>
+      </ul>
     </div>
   )
 }

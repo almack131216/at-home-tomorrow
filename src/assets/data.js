@@ -28,14 +28,14 @@ const dataArr = [
     },
     {
         "id": 4,
-        "name": "Bathroom",
+        "name": "Bedroom",
         "url": "/",
         "swatchColorNo": 4,
         "image_url": image4
     },
     {
         "id": 5,
-        "name": "Bathroom",
+        "name": "Outdoors",
         "url": "/",
         "swatchColorNo": 5,
         "image_url": image5

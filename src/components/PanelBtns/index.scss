@@ -76,13 +76,16 @@ $flex-column-gap: 20px;
                 // /.img-crop
 
                 &.detail {
-                    &:before {
+                    &:before,
+                    &:after {
                         @include swatch-block($detail-w);
+                    }
+
+                    &:before {
                         z-index: 0; //beneath image
                     }
 
                     &:after {
-                        @include swatch-block($detail-w);
                         z-index: 2; //over image
                         opacity: var(--opacity-semi);
                         transition: opacity ease-in-out var(--transition-speed);
@@ -194,11 +197,7 @@ $flex-column-gap: 20px;
                     height: $panel-height-md;
 
                     &.detail {
-                        &:before {
-                            width: $detail-w-md;
-                            height: $detail-w-md;
-                        }
-
+                        &:before,
                         &:after {
                             width: $detail-w-md;
                             height: $detail-w-md;
@@ -231,7 +230,7 @@ $flex-column-gap: 20px;
     .panel-btns-container {
         padding: $detail-offset-md;
         flex-wrap: wrap;
-        // column-gap:unset;
+        column-gap:unset;
 
         >.panel-btn {
             flex:0 1 calc(50% - #{$flex-column-gap});

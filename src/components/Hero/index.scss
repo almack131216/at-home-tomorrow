@@ -7,7 +7,7 @@ $hero-height-sm: 250px;
     height: $hero-height;
 
     &.hero-image {
-        background-color: color(--color-bg-body);
+        background-color: var(--color-bg-body);
         /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
         // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         /* Position and center the image to scale nicely on all screens */
@@ -81,3 +81,28 @@ $hero-height-sm: 250px;
         }
     }
 }
+
+// BP xs
+@media #{$bp-lt-xs} {
+    .hero {
+        height: $hero-height-sm;
+
+        .hero__text {
+            width:90%;
+            h1 {
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+
+                strong {
+                    font-size: 3rem;
+                }
+            }
+
+            p {
+                margin-top:var(--p1);
+            }
+        }
+    }
+}
+
+// / BP xs
